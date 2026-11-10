@@ -1,3 +1,9 @@
-npx create-expo-app@latest meuprimeiroapp -t
-npx expo install react-dom react-native-web
-npx expo start
+Na raiz da pasta, rode:
+    npx create-expo-app@latest meuprimeiroapp -t
+
+Entre na pasta do projeto, utilizando:
+    cd "meuprimeiroapp"
+
+Depois rode:
+    npx expo install react-dom react-native-web
+    npx expo start
