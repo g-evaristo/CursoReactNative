@@ -1,0 +1,3 @@
+npx create-expo-app@latest meuprimeiroapp -t
+npx expo install react-dom react-native-web
+npx expo start
