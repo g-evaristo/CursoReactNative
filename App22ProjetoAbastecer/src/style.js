@@ -33,9 +33,25 @@ const styles = StyleSheet.create({
         margin: 10,
     },
 
+    botaoComBorda:{
+        padding: 20,
+        width: '80%',
+        backgroundColor: '#3c3c3c', 
+        borderRadius: 8,
+        borderWidth: 2,
+        borderColor: '#ef4130', 
+        margin: 10,
+    },
+
     btnTexto:{
         textAlign: "center",
         color: "#FFFFFF",
+        fontSize: 20,
+    },
+
+    btnTextoVermelho:{
+        textAlign: "center",
+        color: "#ef4130",
         fontSize: 20,
     },
 
@@ -50,12 +66,25 @@ const styles = StyleSheet.create({
     textoBranco:{
         color: "#FFF",
         fontSize: 28,
+        padding: 10
     },
 
     estiloModal:{
         flex: 1,
         alignItems: "center",
         justifyContent: "center"
+    },
+
+    textoPequeno:{
+        fontSize: 20
+    },
+
+    alcool:{
+        color: "#00FF00"
+    },
+
+    gasolina:{
+        color: "#ef4130"
     }
 });
 

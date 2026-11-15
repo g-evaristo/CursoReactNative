@@ -10,8 +10,7 @@ class App extends Component{
       this.state = {
         modalVisivel: false,
         precoAlcool: "",
-        precoGasolina: "",
-        total: ""
+        precoGasolina: ""
       };
 
       this.calcular = this.calcular.bind(this);
@@ -67,13 +66,17 @@ class App extends Component{
 
           <TouchableOpacity style={styles.botao} onPress={this.calcular}>
             <View>
-              <Text style={styles.btnTexto}>Abrir Conta</Text>
+              <Text style={styles.btnTexto}>Calcular</Text>
             </View>
           </TouchableOpacity>
 
           <Modal animationType="slide" visible={this.state.modalVisivel} transparent={false}>
             <View style={styles.estiloModal}>
-              <Resultado fechar={ () => this.fechar(false) }/>
+              <Resultado 
+                precoAlcool = {this.state.precoAlcool}
+                precoGasolina = {this.state.precoGasolina}
+                fechar={ () => this.fechar(false) }
+              />
             </View>
           </Modal>
         </View>
